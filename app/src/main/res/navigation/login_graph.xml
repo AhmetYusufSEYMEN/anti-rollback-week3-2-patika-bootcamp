@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
+    android:id="@+id/login_graph"
     app:startDestination="@id/loginFragment">
 
     <fragment
@@ -28,12 +28,11 @@
         android:name="com.patika.week3appnavigation.DialogScreen"
         android:label="DialogScreen" >
         <action
-            android:id="@+id/action_dialogScreen_to_homeActivity"
-            app:destination="@id/homeActivity"/>
+            android:id="@+id/action_dialogScreen_to_main_graph"
+            app:destination="@id/main_graph"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/login_graph"
+            />
     </dialog>
-    <activity
-        android:id="@+id/homeActivity"
-        android:name="com.patika.week3appnavigation.HomeActivity"
-        android:label="activity_home"
-        tools:layout="@layout/activity_home" />
+    <include app:graph="@navigation/main_graph" />
 </navigation>

@@ -17,7 +17,6 @@ class ForgetPasswordFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         fragmentForgetPasswordBinding = FragmentForgetPasswordBinding.inflate(inflater)
         return fragmentForgetPasswordBinding.root
     }
@@ -25,10 +24,9 @@ class ForgetPasswordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         fragmentForgetPasswordBinding.apply {
-            button2.setOnClickListener {
+            button3.setOnClickListener {
                 findNavController().navigate(R.id.action_forgetPasswordFragment_to_dialogScreen)
             }
         }
     }
-
 }

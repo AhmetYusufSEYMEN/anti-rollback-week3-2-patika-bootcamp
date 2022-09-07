@@ -12,27 +12,16 @@ class DialogScreen: DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return activity?.let {
             val builder = AlertDialog.Builder(it)
-            builder.setMessage("This dialog test")
-                .setPositiveButton("OK",{ dialog, id ->
-                    findNavController().apply {
-                        navigate(R.id.action_dialogScreen_to_homeActivity)
-                        backQueue.clear()
-                    }
-
-                    /*val intent = Intent(activity,HomeActivity::class.java)
-                    intent.addFlags(
-                        Intent.FLAG_ACTIVITY_CLEAR_TASK  or
-                                Intent.FLAG_ACTIVITY_NEW_TASK
-                    )
-                    startActivity(intent)*/
-
-                })
-                .setNegativeButton("Cancel",{ dialog, id ->
-
-                })
+            builder.setMessage("Do you want to go Profile Fragment? ")
+                .setPositiveButton("Yes") { _, _ ->
+                    findNavController().navigate(R.id.action_dialogScreen_to_main_graph)
+                    // popUpTo set-> "login_graph" and popUpToInclusive set-> "true" action in login_graph for never come back
+                }
+                .setNegativeButton("No") { _, _ ->
+                    findNavController().navigateUp()
+                }
             builder.create()
         }?: throw IllegalStateException("activity can not null")
-
 
     }
 

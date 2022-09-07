@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3-2/app/src/main/res/layout/activity_home.xml" value="0.3625" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3-2/app/src/main/res/layout/fragment_forget_password.xml" value="0.33" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3-2/app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3-2/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3-2/app/src/main/res/layout/fragment_settings.xml" value="0.33" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3/app/src/main/res/layout/activity_home.xml" value="0.3625" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3/app/src/main/res/layout/activity_member.xml" value="0.3625" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3/app/src/main/res/layout/fragment_forget_password.xml" value="0.3625" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3/app/src/main/res/layout/fragment_login.xml" value="0.3625" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3/app/src/main/res/layout/fragment_profile.xml" value="0.3625" />
+        <entry key="..\:/Users/Seymen/AndroidStudioProjects/ahmet-yusuf-seymen-odev3/app/src/main/res/layout/fragment_settings.xml" value="0.3625" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_forget_password.xml" value="0.19610507246376813" />

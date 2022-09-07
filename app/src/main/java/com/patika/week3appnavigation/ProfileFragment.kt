@@ -8,30 +8,28 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.patika.week3appnavigation.databinding.FragmentLoginBinding
+import com.patika.week3appnavigation.databinding.FragmentProfileBinding
 
 
-class LoginFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
-    private lateinit var fragmentLoginBinding: FragmentLoginBinding
+    private lateinit var fragmentProfileBinding: FragmentProfileBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        fragmentLoginBinding = FragmentLoginBinding.inflate(layoutInflater)
-        return fragmentLoginBinding.root
+        fragmentProfileBinding = FragmentProfileBinding.inflate(inflater)
+        return fragmentProfileBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        fragmentLoginBinding.apply {
+        fragmentProfileBinding.apply {
             button3.setOnClickListener {
-                findNavController().navigate(R.id.action_loginFragment_to_forgetPasswordFragment)
+                findNavController().navigate(R.id.action_profileFragment_to_settingsFragment)
             }
-
         }
     }
-
 
 }
