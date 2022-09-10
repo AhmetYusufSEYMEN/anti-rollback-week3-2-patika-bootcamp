@@ -1,7 +1,8 @@
-package com.patika.week3appnavigation
+package com.patika.week3appnavigation.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.patika.week3appnavigation.R
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

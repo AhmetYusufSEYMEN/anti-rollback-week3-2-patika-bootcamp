@@ -1,11 +1,11 @@
-package com.patika.week3appnavigation
+package com.patika.week3appnavigation.view
 
 import android.app.AlertDialog
 import android.app.Dialog
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.findNavController
+import com.patika.week3appnavigation.R
 
 class DialogScreen: DialogFragment() {
 
