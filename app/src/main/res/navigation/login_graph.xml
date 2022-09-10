@@ -7,32 +7,43 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.patika.week3appnavigation.LoginFragment"
+        android:name="com.patika.week3appnavigation.view.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_forgetPasswordFragment"
-            app:destination="@id/forgetPasswordFragment" />
+            app:destination="@id/forgetPasswordFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
     </fragment>
     <fragment
         android:id="@+id/forgetPasswordFragment"
-        android:name="com.patika.week3appnavigation.ForgetPasswordFragment"
+        android:name="com.patika.week3appnavigation.view.ForgetPasswordFragment"
         android:label="fragment_forget_password"
         tools:layout="@layout/fragment_forget_password" >
         <action
             android:id="@+id/action_forgetPasswordFragment_to_dialogScreen"
-            app:destination="@id/dialogScreen" />
+            app:destination="@id/dialogScreen"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
     </fragment>
     <dialog
         android:id="@+id/dialogScreen"
-        android:name="com.patika.week3appnavigation.DialogScreen"
+        android:name="com.patika.week3appnavigation.view.DialogScreen"
         android:label="DialogScreen" >
         <action
             android:id="@+id/action_dialogScreen_to_main_graph"
             app:destination="@id/main_graph"
-            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"
             app:popUpTo="@id/login_graph"
-            />
+            app:popUpToInclusive="true" />
     </dialog>
     <include app:graph="@navigation/main_graph" />
 </navigation>

@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Week3AppNavigation">
         <activity
-            android:name=".HomeActivity"
+            android:name=".view.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MemberActivity"
+            android:name=".view.MemberActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
