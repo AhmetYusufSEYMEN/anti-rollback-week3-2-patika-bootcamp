@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.patika.week3appnavigation.R
 import com.patika.week3appnavigation.databinding.FragmentProfileBinding
+import com.patika.week3appnavigation.model.UserInfo
 
 class ProfileFragment : Fragment() {
 
@@ -21,17 +22,20 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         fragmentProfileBinding = FragmentProfileBinding.inflate(inflater)
+
         return fragmentProfileBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        fragmentProfileBinding.userProfilInfo = UserInfo("Ahmet Yusuf Seymen","yusuf_seymen63@hotmail.com")
             if (args.userInfoSafeArgs?.name != null){
 
                 fragmentProfileBinding.apply {
-                    txvName.text = args.userInfoSafeArgs?.name.toString()
-                    txvEmail.text = args.userInfoSafeArgs?.email.toString()
+                    /*txvName.text = args.userInfoSafeArgs?.name.toString()
+                    txvEmail.text = args.userInfoSafeArgs?.email.toString()*/
+                    userProfilInfo = UserInfo(args.userInfoSafeArgs?.name.toString(),args.userInfoSafeArgs?.email.toString())
 
                 }
             }
